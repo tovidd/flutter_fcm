@@ -19,5 +19,6 @@ package io.flutter.plugins;
    public void registerWith(PluginRegistry registry) {
     //  GeneratedPluginRegistrant.registerWith(registry);
     FirebaseMessagingPlugin.registerWith(registry.registrarFor("io.flutter.plugins.firebasemessaging.FirebaseMessagingPlugin"));
+    // GeneratedPluginRegistrant.registerWith((FlutterEngine) registry);
    }
  }
