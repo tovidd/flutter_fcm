@@ -1,4 +1,5 @@
-package io.flutter.plugins;
+// package io.flutter.plugins;
+package com.example.flutter_fcm;
 
  import io.flutter.app.FlutterApplication;
  import io.flutter.embedding.engine.FlutterEngine;
@@ -7,6 +8,7 @@ package io.flutter.plugins;
  import io.flutter.plugins.GeneratedPluginRegistrant;
  import io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService;
  import io.flutter.plugins.firebasemessaging.FirebaseMessagingPlugin;
+//  import FirebaseCloudMessagingPluginRegistrant.java;
 
  public class Application extends FlutterApplication implements PluginRegistrantCallback {
    @Override
@@ -18,7 +20,7 @@ package io.flutter.plugins;
    @Override
    public void registerWith(PluginRegistry registry) {
     //  GeneratedPluginRegistrant.registerWith(registry);
-    FirebaseMessagingPlugin.registerWith(registry.registrarFor("io.flutter.plugins.firebasemessaging.FirebaseMessagingPlugin"));
-    // GeneratedPluginRegistrant.registerWith((FlutterEngine) registry);
+    // FirebaseMessagingPlugin.registerWith(registry.registrarFor("io.flutter.plugins.firebasemessaging.FirebaseMessagingPlugin"));
+    FirebaseCloudMessagingPluginRegistrant.registerWith(registry);
    }
  }
